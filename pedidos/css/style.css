@@ -1,0 +1,59 @@
+.full-height {
+	    min-height: 100%;
+	}
+	.waypoints {
+		margin: 15px 0;
+	}
+	.waypoint, .type-selector, .box-details {
+		border: 1px solid #ddd;
+		border-radius: 5px;
+		overflow: auto;
+		padding: 10px 0px;
+		margin: 15px 0;
+		position: relative;
+	}
+	.type-selector {
+		padding: 10px;
+	}
+	.waypoint .side {
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		background: #F7CF38;
+		text-align: center;
+		line-height: 55px;
+		padding: 0;
+		color: #000;
+		margin: 0;
+	}
+	.box-details > div {
+		text-align: center;
+		font-size: 14px;
+		font-weight: bold;
+		color: #F7CF38;
+	}
+	.box-details > div span {
+		display: block;
+		text-align: center;
+		font-size: 16px;
+		color: #FFF;
+	}
+	.container-fluid {
+		padding: 0;
+	}
+	.map {
+	    padding-right: 0;
+	}
+	.menu{
+		background-color: #000
+	}
+	.menu img {
+		margin-top: 5px
+	}
+	.navbar{
+		margin-bottom: 0
+	}
+	body{
+		background-color: #000
+	}
