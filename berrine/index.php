@@ -62,56 +62,57 @@
 <body>
 
     <?php include'includes/menu.php';?>
-<!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <img class="first-slide" src="img/banner1.jpg" alt="First slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>SOLICITE AGORA!</h1>
-              <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+    <div class="pedidosHome">
+        <div class="container">
+            <div class="col-md-3">
+                <div class="">teste</div>
             </div>
-          </div>
+            <div class="col-md-6 pedidosBox">
+			<div class="waypoints">
+				<div class="waypoint">
+					<div class="col-sm-1 side">A</div>
+					<div class="col-sm-11 col-sm-offset-1">
+						<input type="text" class="form-control" id="input-a" placeholder="Endereço - ex: Av. Paulista, 210" tabindex="1" autocomplete="off" />
+					</div>
+				</div>
+				<div class="waypoint">
+					<div class="col-sm-1 side">B</div>
+					<div class="col-sm-11 col-sm-offset-1">
+						<input type="text" class="form-control" id="input-b" placeholder="Endereço - ex: Av. Paulista, 470" tabindex="1" autocomplete="off" />
+					</div>
+				</div>
+			</div>
+
+			<div class="box-details type-selector">
+				<select id="type" class="form-control">
+					<option value="1.0">Motoboy</option>
+					<option value="2.0">Fiorino</option>
+				</select>
+			</div>
+
+			<div class="box-details resultado">
+				<div class="col-sm-4 duration">
+					 Estimativa
+					<span>---</span>
+				</div>
+				<div class="col-sm-4 value">
+					Valor
+					<span>---</span>
+				</div>
+				<div class="col-sm-4 distance">
+					Distância
+					<span>---</span>
+				</div>
+			</div>
+                    <div class="box-details">
+                        <button class="btn btn-primary col-md-12">Chamar motoboy!</button>
+                    </div>
+		</div>
+		<div class="col-sm-8 map">
+			<div id="map" class="full-height"></div>
+		</div>
         </div>
-        <div class="item">
-          <img class="second-slide" src="img/banner2.jpg" alt="Second slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="third-slide" src="img/banner3.jpg" alt="Third slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div><!-- /.carousel -->
+    </div>
     <!-- Page Content -->
     <div class="container">
     	<a href="#0" class="cd-top">Top</a> <!-- cd-nugget-info -->
@@ -337,4 +338,9 @@ jQuery(document).ready(function($) {
     <link href="css/style.css" rel="stylesheet">
     <link rel=”s"css/style.css" id="font-awesome-css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" type="text/css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Lobster|Open+Sans' rel='stylesheet' type='text/css'>
+    
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyC1esiIUvQY-w6Q8khYrkeOnThq5qa4yUw&libraries=geometry,places"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
 </html>
