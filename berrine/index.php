@@ -65,9 +65,10 @@
     <div class="pedidosHome">
         <div class="container">
             <div class="col-md-3">
-                <div class="">teste</div>
+                <div class=""></div>
             </div>
             <div class="col-md-6 pedidosBox">
+                <h3 class="chamada">Faça seu Pedido/Simulação </h3>
 			<div class="waypoints">
 				<div class="waypoint">
 					<div class="col-sm-1 side">A</div>
